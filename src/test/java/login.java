@@ -13,7 +13,7 @@ public class login {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("http://qa.taltektc.com/home/login");
-        driver.findElement(By.name("email")).sendKeys("osmangani360@gmail.com")
+        driver.findElement(By.name("email")).sendKeys("osmangani360@gmail.com");
 
 
     }
