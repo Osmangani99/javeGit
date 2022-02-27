@@ -16,6 +16,8 @@ public class login {
         driver.findElement(By.name("email")).sendKeys("osmangani360@gmail.com");
         // please add the password send key
 
+        driver.findElement(By.className("nav-link")).click();
+
 
 
 
