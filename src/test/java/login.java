@@ -16,6 +16,7 @@ public class login {
         driver.findElement(By.name("email")).sendKeys("osmangani360@gmail.com");
         // please add the password send key
 
+        // Below is what I change in Add branch from "Osman"
         driver.findElement(By.className("nav-link")).click();
 
 
