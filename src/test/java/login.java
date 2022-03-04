@@ -36,6 +36,8 @@ public class login {
        driver.findElement(By.xpath("//button[@onclick='myFunction();']")).click();
 
        driver.findElement(By.linkText("Web Table")).click();
+       String pageTitleWebTable = driver.getTitle();
+       System.out.println("This the page title of------------->"+pageTitleWebTable);
 
 
 
