@@ -22,6 +22,12 @@ public class login {
         String pageTitle = driver.getTitle();
         System.out.println(pageTitle);
 
+        driver.findElement(By.xpath("//a[@class='nav-link']")).click();
+        String updatePage = driver.getTitle();
+        System.out.println("This the page title of------------->"+updatePage);
+
+
+
 
 
 
