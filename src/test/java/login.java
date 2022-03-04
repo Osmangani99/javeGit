@@ -12,6 +12,7 @@ public class login {
      public void login_test(){
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+
         driver.get("http://qa.taltektc.com/home/login");
         driver.findElement(By.name("email")).sendKeys("osmanqa200@gmail.com");
         // please add the password send key
@@ -36,6 +37,19 @@ public class login {
        // Let's add few more line
 
        driver.findElement(By.xpath("//button[@onclick='myFunction();']")).click();
+
+       driver.findElement(By.linkText("Web Table")).click();
+       String pageTitleWebTable = driver.getTitle();
+       System.out.println("This the page title of------------->"+pageTitleWebTable);
+
+       driver.findElement(By.linkText("Alert")).click();
+
+       // need to update the branch
+
+
+
+
+
 
 
 
