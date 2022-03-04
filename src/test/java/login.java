@@ -21,12 +21,12 @@ public class login {
 
         String pageTitle = driver.getTitle();
         System.out.println(pageTitle);
-
+        // Update page details
         driver.findElement(By.xpath("//a[@class='nav-link']")).click();
         String updatePage = driver.getTitle();
         System.out.println("This the page title of------------->"+" "+"updatePage");
 
-
+        // i Frame page details
         driver.findElement(By.linkText("iFrame")).click();
         String pageTitleIframe= driver.getTitle();
         System.out.println("This the page title of------------->"+" "+"pageTitleIframe");
