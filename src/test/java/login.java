@@ -31,6 +31,10 @@ public class login {
         String pageTitleIframe= driver.getTitle();
         System.out.println("This the page title of------------->"+" "+"pageTitleIframe");
 
+       // Let's add few more line
+
+       driver.findElement(By.xpath("//button[@onclick='myFunction();']")).click();
+
 
 
 
