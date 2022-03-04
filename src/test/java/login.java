@@ -1,6 +1,7 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -9,7 +10,7 @@ public class login {
 
 
     @Test
-     public void login_test(){
+     public void login_test() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
@@ -44,7 +45,16 @@ public class login {
 
        driver.findElement(By.linkText("Alert")).click();
 
-       // need to update the branch
+       Thread.sleep(1000);
+       WebElement jsAlert = driver.findElement(By.xpath("//button[@class='btn btn-light']"));
+       System.out.println("Here is the Text of the jsAlert--------->"+jsAlert.getText());
+       jsAlert.click();
+       driver.switchTo().alert().accept();
+
+
+
+
+
 
 
 
