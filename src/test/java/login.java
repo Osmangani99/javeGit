@@ -39,6 +39,9 @@ public class login {
        String pageTitleWebTable = driver.getTitle();
        System.out.println("This the page title of------------->"+pageTitleWebTable);
 
+       driver.findElement(By.linkText("Alert")).click();
+
+
 
 
 
