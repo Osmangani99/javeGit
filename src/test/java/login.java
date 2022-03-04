@@ -19,6 +19,15 @@ public class login {
         driver.findElement(By.name("password")).sendKeys("osman123");
         driver.findElement(By.className("my-login")).click();
 
+        String pageTitle = driver.getTitle();
+        System.out.println(pageTitle);
+
+        driver.findElement(By.xpath("//a[@class='nav-link']")).click();
+        String updatePage = driver.getTitle();
+        System.out.println("This the page title of------------->"+updatePage);
+
+
+
 
 
 
