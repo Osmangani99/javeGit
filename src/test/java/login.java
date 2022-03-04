@@ -15,7 +15,7 @@ public class login {
         driver.get("http://qa.taltektc.com/home/login");
         driver.findElement(By.name("email")).sendKeys("osmanqa200@gmail.com");
         // please add the password send key
-
+        // The fun part is here
         driver.findElement(By.name("password")).sendKeys("osman123");
         driver.findElement(By.className("my-login")).click();
 
