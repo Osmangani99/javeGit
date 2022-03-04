@@ -29,7 +29,7 @@ public class login {
         // i Frame page details
         driver.findElement(By.linkText("iFrame")).click();
         String pageTitleIframe= driver.getTitle();
-        System.out.println("This the page title of------------->"+" "+"pageTitleIframe");
+        System.out.println("This the page title of------------->"+" "+"pageTitleIframe"); // Conflict 2
 
        // Let's add few more line
 
