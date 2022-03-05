@@ -49,12 +49,9 @@ public class login {
        WebElement jsAlert = driver.findElement(By.xpath("//button[@class='btn btn-light']"));
        System.out.println("Here is the Text of the jsAlert--------->"+jsAlert.getText());
        jsAlert.click();
-       driver.switchTo().alert().accept();
+       driver.switchTo().alert().accept()
 
-       // Now I am from updateBranch after I delete the branch form my gitHub
-
-
-
+         // No conflict please 
 
 
 
