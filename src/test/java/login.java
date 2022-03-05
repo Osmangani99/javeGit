@@ -51,6 +51,9 @@ public class login {
        jsAlert.click();
        driver.switchTo().alert().accept();
 
+       // Now I am from updateBranch after I delete the branch form my gitHub
+
+
 
 
 
