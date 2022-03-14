@@ -52,7 +52,10 @@ public class login {
        driver.switchTo().alert().accept();
 
          // No conflict please
-// solve Feature 
+        // solve Feature
+
+
+        // Writing the line after delete the Feature and restore
 
 
 
