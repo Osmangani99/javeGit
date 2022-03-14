@@ -52,10 +52,7 @@ public class login {
        driver.switchTo().alert().accept();
 
          // No conflict please
-
-
-        // This is the line from Feature
-
+// solve Feature 
 
 
 
